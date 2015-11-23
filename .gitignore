@@ -1,0 +1,16 @@
+
+# /build/
+/build/native
+/build/native-package-mobile
+/build/package
+/build/production
+/build/testing
+
+# /build/temp/
+/build/temp/native
+/build/temp/package
+/build/temp/production
+/build/temp/testing
+
+# /resources/sass/
+/resources/sass/.sass-cache
