@@ -63,4 +63,21 @@
         <property name="build.options.native.product" value="product:touch"/>
     </target>
     -->
+
+  <target name="-after-build"/>
+    <target name="build"
+            depends="init,-before-build,-build,-after-build"
+            description="Copy over the fonts folder"/>
+
+    <copy todir="${basedir}/resources/css/stylesheets/fonts" overwrite="true">
+      <fileset dir="${basedir}/resources/sass/stylesheets/fonts">
+        <include name="**/*" />
+      </fileset>
+    </copy>
+    <copy todir="${build.dir}/resources/css/stylesheets/fonts" overwrite="true">
+      <fileset dir="${basedir}/resources/sass/stylesheets/fonts">
+        <include name="**/*" />
+      </fileset>
+    </copy>
+
 </project>
