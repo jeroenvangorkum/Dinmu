@@ -1,4 +1,7 @@
 
+# /
+/phonegap.local.properties
+
 # /build/
 /build/native
 /build/native-package-mobile
